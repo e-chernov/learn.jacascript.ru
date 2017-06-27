@@ -1,10 +1,10 @@
-var x = prompt("Возведем число:", "");
+var x = prompt("Г‚Г®Г§ГўГҐГ¤ГҐГ¬ Г·ГЁГ±Г«Г®:", "");
 
-var n = prompt("В степень:");
+var n = prompt("Г‚ Г±ГІГҐГЇГҐГ­Гј:");
 
 function pow(x,n) {
 
-  var result = 1;
+  var result = x;
 
   for (var i = 1; i <= n; i++) {
 
