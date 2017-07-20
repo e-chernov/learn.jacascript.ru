@@ -1,13 +1,8 @@
-function sum() {
-    var result = 0;
-    for (var i = 0; i < arguments.length; i++) {
-        result += arguments[i];
-    }
-    return result;
+function sumArgs() {
+  var arr = [].slice.call(arguments);
+  return arr.reduce(function(a, b) {
+    return a + b;
+  });
 }
 
-alert( sum() );
-alert( sum(1) );
-alert( sum(1, 2) );
-alert( sum(1, 2, 3) );
-alert( sum(1, 2, 3, 4) );
+alert( sumArgs(1, 2, 3) ); // 6, аргументы переданы через запятую, без массива
